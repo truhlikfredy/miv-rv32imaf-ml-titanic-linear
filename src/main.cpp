@@ -30,7 +30,7 @@ int main() {
 
     // Calculate a dot product of an entry and weights
     const float dot = weight[0] * entry.sex    +
-    		          weight[1] * entry.age    +
+                      weight[1] * entry.age    +
                       weight[2] * entry.class1 +
                       weight[3] * entry.class2 +
                       weight[4] * entry.class3;
@@ -40,7 +40,7 @@ int main() {
     const uint32_t prediction = (uint32_t)(round(normalized));
     const bool     correct    = (prediction == entry.survived);
 
-    // Increment the correct TN/TP/FN/FP bucket:
+    // Increment the correct TN/TP/FN/FP bucket for the confusion matrix:
     TP += (correct  && prediction == 1)? 1 : 0;
     TN += (correct  && prediction == 0)? 1 : 0;
     FP += (!correct && prediction == 1)? 1 : 0;
@@ -55,7 +55,8 @@ int main() {
   printf("Actually survived | %15d | %18d |\n", FN, TP);
   printf("----------------------------------------------------------\n");
   printf("total_entries=%d, correctly_predicated=%d, accuracy=%f \n",
-		  titanic_data_size, TP + TN, (titanic_data_size - (FP + FN)) / (float)titanic_data_size);
+		 titanic_data_size, TP + TN,
+         (titanic_data_size - (FP + FN)) / (float)titanic_data_size);
 
   return 0;
 }
