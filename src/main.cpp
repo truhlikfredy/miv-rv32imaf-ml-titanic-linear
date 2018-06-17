@@ -55,7 +55,7 @@ int main() {
   printf("Actually survived | %15d | %18d |\n", FN, TP);
   printf("----------------------------------------------------------\n");
   printf("total_entries=%d, correctly_predicated=%d, accuracy=%f \n",
-		 titanic_data_size, TP + TN,
+         titanic_data_size, TP + TN,
          (titanic_data_size - (FP + FN)) / (float)titanic_data_size);
 
   return 0;
