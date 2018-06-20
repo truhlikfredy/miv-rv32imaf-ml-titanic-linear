@@ -41,7 +41,7 @@ int main() {
 
     // Step 1: Normalize  0 <= (dot + bias) <= 1
     // Step 2: Round up the float into discrete 0/1
-    // Step 3: Compare the predicted vs the actual information
+    // Step 3: Compare the predicted to the actual value
     const float    normalized = fminf(1.0f, fmaxf(0.0f, dot + bias));
     const uint32_t prediction = (uint32_t)(round(normalized));
     const bool     correct    = (prediction == entry.survived);
