@@ -141,7 +141,7 @@
                                 								
                                 <option id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.cpp.compiler.nortti.627641724" name="Do not use RTTI (-fno-rtti)" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.cpp.compiler.nortti" useByScannerDiscovery="true" value="true" valueType="boolean"/>
                                 								
-                                <option id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.cpp.compiler.defs.502494475" name="Defined symbols (-D)" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.cpp.compiler.defs" useByScannerDiscovery="true" valueType="definedSymbols"/>
+                                <option id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.cpp.compiler.defs.502494475" name="Defined symbols (-D)" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.cpp.compiler.defs" useByScannerDiscovery="true"/>
                                 								
                                 <inputType id="ilg.gnumcueclipse.managedbuild.cross.riscv.tool.cpp.compiler.input.129197206" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.tool.cpp.compiler.input"/>
                                 							
@@ -150,6 +150,8 @@
                             <tool id="ilg.gnumcueclipse.managedbuild.cross.riscv.tool.c.linker.792206930" name="GNU RISC-V Cross C Linker" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.tool.c.linker">
                                 								
                                 <option id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.c.linker.gcsections.388688360" name="Remove unused sections (-Xlinker --gc-sections)" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.c.linker.gcsections" value="true" valueType="boolean"/>
+                                								
+                                <option id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.c.linker.useprintffloat.609055650" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.c.linker.useprintffloat" value="true" valueType="boolean"/>
                                 							
                             </tool>
                             							
@@ -161,7 +163,7 @@
                                 								
                                 <option id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.cpp.linker.usenewlibnano.1971005175" name="Use newlib-nano (--specs=nano.specs)" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.cpp.linker.usenewlibnano" useByScannerDiscovery="false" value="true" valueType="boolean"/>
                                 								
-                                <option id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.cpp.linker.useprintffloat.1826585152" name="Use float with nano printf (-u _printf_float)" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.cpp.linker.useprintffloat" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+                                <option id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.cpp.linker.useprintffloat.1826585152" name="Use float with nano printf (-u _printf_float)" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.cpp.linker.useprintffloat" useByScannerDiscovery="false" value="true" valueType="boolean"/>
                                 								
                                 <option id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.cpp.linker.scriptfile.349120099" name="Script files (-T)" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.cpp.linker.scriptfile" useByScannerDiscovery="false" valueType="stringList">
                                     									
@@ -370,6 +372,8 @@
                             <tool id="ilg.gnumcueclipse.managedbuild.cross.riscv.tool.c.linker.171000225" name="GNU RISC-V Cross C Linker" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.tool.c.linker">
                                 								
                                 <option id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.c.linker.gcsections.2073832963" name="Remove unused sections (-Xlinker --gc-sections)" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.c.linker.gcsections" value="true" valueType="boolean"/>
+                                								
+                                <option id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.c.linker.useprintffloat.1091401193" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.c.linker.useprintffloat" value="true" valueType="boolean"/>
                                 							
                             </tool>
                             							
