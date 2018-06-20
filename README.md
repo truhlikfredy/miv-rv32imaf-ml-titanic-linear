@@ -1,6 +1,6 @@
 # Machine learning - linear regression with Titanic dataset
 
-This SoftConsole C++ example project demonstrates how to linear regresion is used in machine learning and uses floating point arithmetic on a Mi-V Soft processor running **25MHz**.
+This SoftConsole C++ example project demonstrates how to linear regresion is used in machine learning and uses floating point arithmetic on a Mi-V Soft processor running **40MHz** on Future Electronics Creative Board M2S025/M2GL025. But can be easily used with Security Eval Kit featuring M2S090.
 
 ```
 Confusion matrix:
@@ -22,7 +22,7 @@ Part of the training was cleaning data which then was saved in clean/normalized 
 # Mi-V Soft processor
 This example uses a Mi-V Soft processor MiV_RV32IMAF_L1_AHB. The design is built for debugging MiV_RV32IMAF_L1_AHB through the SmartFusion2 FPGA programming JTAG port using a FlashPro5. 
 
-All the platform/design specific definitions such as peripheral base addresses, system clock frequency (preconfigured for 50MHz) etc. are included in hw_platform.h. The hw_platform.h is located at the **src** folder of this project.
+All the platform/design specific definitions such as peripheral base addresses, system clock frequency (preconfigured for 40MHz) etc. are included in hw_platform.h. The hw_platform.h is located at the **src** folder of this project.
 
 The MiV_RV32IMAF_L1_AHB firmware projects need the riscv_hal and the hal firmware (RISC-V HAL).
 
@@ -52,11 +52,11 @@ The launcher should be visible from external tools. If it's not, then it might b
 
 ![screenshot](images/permissions.png)
 
-The program is called withing few loops so the sphere will be "rendered" under different "zoom" levels and under different lighting conditions. All the output can be observed only through UART (not GPIO LEDs or anything else present).
+The program iterates the pasenger list and tries to predict outcome, then it compares to actual value. In the end program will output the final confusion matrix with the resulting accuracy. The example is getting 79% accuracy as it is simple linear regression. All the output can be observed only through UART (not GPIO LEDs or anything else present).
 
 
 # Target hardware
-This example project is targeted at a Future Electronics Creative Board which is based on IGLOO2 or SmartFusion2 M2GL025/M2S025 chips. The example project is built using a clock frequency of 25MHz. Trying to execute this example project on a different design will result in incorrect baud rate being used by UART (so tweak the source code as required).
+This example project is targeted at a Future Electronics Creative Board which is based on IGLOO2 or SmartFusion2 M2GL025/M2S025 chips. The example project is built using a clock frequency of 40MHz. Trying to execute this example project on a different design will result in incorrect baud rate being used by UART (so tweak the source code as required).
 
 ![Target board photo](images/target.jpg)
 
@@ -70,4 +70,4 @@ An example design for SmartFusion2 90 Security Eval Kit is available at:
 https://github.com/RISCV-on-Microsemi-FPGA/M2S090-Security-Eval-Kit
 
 # Silicon revision dependencies
-This example is tested on M2S025 device.
+This example is tested on M2S025 and M2S090 device.
