@@ -1,0 +1,10 @@
+
+sudo: required
+
+language: c
+
+services:
+  - docker
+
+script:
+- docker run -v ${TRAVIS_BUILD_DIR}:/docker_host antonkrug/softconsole-5-3-slim bash -c "eclipse -nosplash -application org.eclipse.cdt.managedbuilder.core.headlessbuild -data /opt/microsemi/softconsole/extras/workspace.examples/ -import /docker_host/ -cleanBuild .*/.*"
